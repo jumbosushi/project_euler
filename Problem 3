@@ -1,0 +1,21 @@
+var prime = function(number) {
+    var count = []
+	var array_index = 0
+	/* got help from https://stackoverflow.com/questions/21966000/need-to-generate-prime-numbers-in-java-script */
+	function isPrime(n) {
+		for ( var i = 2; i < n; i++ ) {
+		    if ( n % i === 0 ) {
+		        return false;
+		    }
+		    else {return true}
+		}
+}
+	for (var i=1; i<number; i++) {
+		if (number%i === 0 && isPrime(i)) {
+			count[array_index] = i
+			array_index += 1
+		}
+	}
+    console.log(count)
+}
+prime(1000)

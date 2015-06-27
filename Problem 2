@@ -1,0 +1,15 @@
+current = 1
+last = 1
+sum = 0
+var myFib = function(number) {
+	while (current < number) {
+	    current += last
+	    if (current < number && current%2 == 0) {
+	        sum += current
+	    }
+	    else {}
+	    last = current - last
+	}
+	console.log(sum)
+}
+myFib(4000000)
