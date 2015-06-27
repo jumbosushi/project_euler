@@ -1,3 +1,6 @@
+/* having trouble with isPrime function :( */
+
+
 var prime = function(number) {
     var count = []
 	var array_index = 0
